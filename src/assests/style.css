@@ -1,0 +1,39 @@
+.single-box {
+	margin: 0 2rem 2rem 2rem;
+	padding: 2rem;
+	border: 1px solid #d3d3d3;
+	background: #fff;
+	box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+	
+}
+
+.text-design {
+	font-weight: bold;
+}
+
+
+.container {
+	width: 95%
+}
+
+.text-span {
+	font-weight: bolder;
+	font-size: 14px;
+}
+
+.total-position {
+	position: absolute;
+	margin-top:65%;
+	padding-left: 2em;
+	margin-left: 1.5em;
+
+}
+
+.total-container {
+	background: red;
+	width: 400px;
+	border: 1px solid #d3d3d3;
+	background: #fff;
+	box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+	padding: 2rem 4rem;
+}

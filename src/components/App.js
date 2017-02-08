@@ -5,10 +5,16 @@ import Total from '../containers/total_containers';
 
 const App = () => {
 	return(
-		<div>
-			<ProductContainer/>
-			<CartContainer/>
-			<Total/>
+		<div className="container">
+			<div className="row">
+				<div className="col-lg-8">
+					<ProductContainer/>
+				</div>
+				<div className="col-lg-4">
+					<CartContainer/>
+					<Total/>
+				</div>
+			</div>
 		</div>
 	)
 }

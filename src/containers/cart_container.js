@@ -11,17 +11,19 @@ class CartContainer extends Component {
   		
     return (
       <div>
-      	<h1>Cart</h1>
-      	<hr/>
-      	{selectedProduct.map((product) => {
-      		return (
-      			<Cart 
-      				key={`selectedProdct${product.id}`}
-      				product={ product }
-      				removeToCart={() => removeToCart(product)}
-      			/>
-      		)
-      	})}
+      	<h1 className="text-design">Cart</h1>
+      	<hr/> 
+          <div className="row">
+            {selectedProduct.map((product) => {
+              return (
+                <Cart 
+                  key={`selectedProdct${product.id}`}
+                  product={ product }
+                  removeToCart={() => removeToCart(product)}
+                />
+              )
+            })}
+          </div>
       </div>
     );
   }

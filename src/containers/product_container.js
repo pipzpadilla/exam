@@ -12,21 +12,29 @@ class ProductContainer extends Component {
     }
 
   render() {
-    const { products, addToCart } = this.props
+    const { products, addToCart, removeAll } = this.props
 
     return (
       <div>
-      	<h1>Products</h1>
+      	<h1 className="text-design">Products</h1> 
+        <span>
+          <button 
+            onClick={removeAll}
+            className="btn btn-danger btn-lg">EMPTY CART</button>
+
+        </span>
         <hr/>
-        {products.map((product) => {
+          <div className="row box-container">
+             {products.map((product) => {
             return (
-              <ProductList
-                key={`product${product.id}`}
-                product={product}
-                addToCart={() => addToCart(product)}
-              />
+                <ProductList
+                  key={`product${product.id}`}
+                  product={product}
+                  addToCart={() => addToCart(product)}
+                />
             )
           })}
+          </div>
       </div>
     );
   }
@@ -35,7 +43,7 @@ class ProductContainer extends Component {
 export default connect(
 	state => {
 		  const { productList } = state
-        
+        console.log(state)
 		return {
         products: productList.products
 		}
