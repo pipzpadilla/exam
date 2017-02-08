@@ -30,7 +30,7 @@ export const productList = (state = c.INIT_STATE, action) => {
             return _.assign({}, state, {
                 products: arr1,
                 selectedProducts: [],
-                total: '0'
+                total: []
             })
 
         
